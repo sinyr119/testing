@@ -4,42 +4,50 @@
   <title>올라푸의 웹사이트</title>
   <meta charset="utf-8">
 </head>
+<style>
+  body{
+    margin: 0px;
+  }
+  a{
+    color: black;
+  }
+  h1{
+    font-size:50px;
+    text-align: center;
+    border-bottom: 5px solid gray;
+    margin: 0px;
+    padding: 20px;
+
+  }
+  .no_underline{
+    text-decoration: none;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  #grid .mainlist{
+  border-right: 3px solid gray;
+  width: 130px;
+  height: 500px;
+  margin: 0px;
+  }
+  #grid .maincontent{
+    padding: 10px;
+  }
+</style>
 <body>
-<a href="index.html"><h1><strong>올라푸</strong></h1></a>
-<ol>
-  <a href="1.html"><li>좋아하는 노래</li></a>
-  <a href="2.html"><li>좋아하는 드라마</li></a>
-</ol>
-<p style="margin-top:45px;">신박한 웹사이트를 만들고 싶습니다.ㅎㅎ</p>
-<p><img src="startup.jpg" height="20%" width="20%"></p>
-<a href="https://opentutorials.org/course/1" target="_blank" title="생활코딩">내 선생님 생활코딩 바로가기ㅎㅎ</a>
-<p>
-  <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://olafu.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-
-
-
-
-
-<p style="font-size:10px;">2020년 1월 7일에 시작했습니다.</p>
+  <h1><a href="index.html" class="no_underline">올라푸</a></h1>
+  <div id="grid">
+  <div>
+    <ol class="mainlist">
+      <li><a href="1.html" class="no_underline">좋아하는 노래</a></li>
+      <li><a href="2.html" class="no_underline">좋아하는 드라마</a></li>
+    </ol>
+  </div>
+  <div><img class="maincontent" src="startup.jpg" height="100px" width="200px"></div>
+  </div>
+  <a href="https://opentutorials.org/course/1" target="_blank" title="생활코딩">생활코딩 바로가기</a>
+  <p style="font-size:10px;">2020년 1월 7일에 시작했습니다.</p>
 </body>
 </html>
