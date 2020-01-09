@@ -28,26 +28,30 @@
   }
   #grid .mainlist{
   border-right: 3px solid gray;
-  width: 130px;
-  height: 500px;
   margin: 0px;
   }
   #grid .maincontent{
     padding: 10px;
   }
+  @media(max-width:1000px){
+    #grid{
+      display: block;
+    }
+
+  }
 </style>
 <body>
   <h1><a href="index.html" class="no_underline">올라푸</a></h1>
   <div id="grid">
-  <div>
-    <ol class="mainlist">
+  <div class="mainlist">
+    <ol>
       <li><a href="1.html" class="no_underline">좋아하는 노래</a></li>
       <li><a href="2.html" class="no_underline">좋아하는 드라마</a></li>
     </ol>
   </div>
-  <div>
-    <img class="maincontent" src="startup.jpg" height="100px" width="200px">
-    <p class="maincontent">
+  <div class="maincontent">
+    <img src="startup.jpg" height="100px" width="200px">
+    <p>
       <strong>발자국</strong><br>
 <br>
 바닷가 모래밭에서<br>
