@@ -1,0 +1,36 @@
+body{
+  margin: 0px;
+}
+a{
+  color: black;
+}
+h1{
+  font-size:50px;
+  text-align: center;
+  border-bottom: 5px solid gray;
+  margin: 0px;
+  padding: 20px;
+
+}
+.no_underline{
+  text-decoration: none;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+#grid .mainlist{
+border-right: 3px solid gray;
+margin: 0px;
+}
+#grid .maincontent{
+  padding: 10px;
+}
+@media(max-width:1000px){
+  #grid{
+    display: block;
+    }
+    #grid .mainlist{
+    border-right: 0px;
+    }
+  }
