@@ -1,41 +1,15 @@
 <!doctype html>
 <html>
-
 <head>
   <title>올라푸의 웹사이트</title>
   <meta charset="utf-8">
 </head>
 <link rel="stylesheet" href="style.css">
+<script src="color.js"></script>
+
 <body>
   <h1><a href="index.html" class="no_underline">올라푸</a></h1>
-  <script>
-  function nightHandler(self){
-      var target=document.querySelector('body');
-      var alist=document.querySelectorAll('a');
-      var i=0;
-      if(this.value==='야간모드'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        while(i<alist.length){
-          alist[i].style.color='white';
-          i+=1;
-        }
-        this.value='주간모드';
-        }
-      else{
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        while(i<alist.length){
-          alist[i].style.color='black';
-          i+=1;
-        }
-        this.value='야간모드';
-        }
-
-  };
-</script>
-    <input id="night" type="button" value="야간모드" onclick="
-    nightHandler(this)">
+  <input id="night" type="button" value="야간모드" onclick="nightHandler(this)">
   <div id="grid">
   <div class="mainlist">
     <ol>
